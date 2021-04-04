@@ -1,14 +1,6 @@
-// Copyright 2017 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-// ignore_for_file: public_member_api_docs
-
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:sensors/sensors.dart';
-
-import 'snake.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'MoCa'),
     );
   }
 }
@@ -72,11 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
               child: SizedBox(
                 height: _snakeRows * _snakeCellSize,
                 width: _snakeColumns * _snakeCellSize,
-                child: Snake(
-                  rows: _snakeRows,
-                  columns: _snakeColumns,
-                  cellSize: _snakeCellSize,
-                ),
               ),
             ),
           ),
